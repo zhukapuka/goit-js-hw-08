@@ -33,4 +33,5 @@ a {
 }
 .basicLightbox {
   background: rgba(46, 47, 66, 0.8);
+  cursor: zoom-out;
 }

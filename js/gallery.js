@@ -84,13 +84,14 @@ alt="${item.description}"/></a>
 document.querySelectorAll(".gallery-image").forEach((img) => {
   img.addEventListener("mouseover", () => {
     img.style.transform = "scale(1.05)";
+    img.style.cursor = "zoom-in";
   });
 
   img.addEventListener("mouseout", () => {
     img.style.transform = "scale(1)";
   });
 });
-// Вішаю подію, делегую її, щоб при клікую відкривалась картинка в модальному вікні
+// Вішаю подію, делегую її, щоб при кліку відкривалась картинка в модальному вікні
 markup.addEventListener("click", function markupClick(e) {
   e.preventDefault();
   console.log(e.target.dataset.source);
