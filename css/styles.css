@@ -1,4 +1,36 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.gallery {
+  margin-top: 24px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1128px;
+  gap: 24px;
+}
+.gallery-image {
+  display: block;
+  width: 360px;
+  height: 200px;
+  transition: transform 300ms ease-in;
+}
+.basicLightbox {
+  background: rgba(46, 47, 66, 0.8);
+}
