@@ -103,12 +103,4 @@ markup.addEventListener("click", function markupClick(e) {
     <img src="${e.target.dataset.source}" style="width:1112px; height:auto; margin-top:32px;">
 `);
   imageModal.show();
-  // створюю обробник події на закриття модального вікна
-  const modalImage = document.querySelector("img");
-  modalImage.addEventListener("click", () => {
-    if (imageModal) {
-      imageModal.close(); // Закриваємо модальне вікно
-      imageModal = null; // Очищаємо стан
-    }
-  });
 });
